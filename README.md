@@ -1,4 +1,4 @@
-# modular-html
+# modular-code
 
 An incredibly simple way to modularize your code.
 
