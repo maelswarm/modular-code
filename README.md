@@ -5,7 +5,7 @@ An incredibly simple way to modularize your code.
 ## Install
 
 ````js
-npm install -g modular-html
+npm install -g modular-code
 ````
 
 ### root.html
@@ -56,7 +56,7 @@ npm install -g modular-html
 ## Build
 
 ````js
-modular-html ./root.html ./main.html
+modular-code ./root.html ./main.html
 ````
 
 ### Result - main.html
