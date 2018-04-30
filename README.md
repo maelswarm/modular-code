@@ -1,5 +1,6 @@
 # modular-html
-Ultra light-weight modular based HTML
+
+An incredibly simple way to modularize your code.
 
 ## Install
 
