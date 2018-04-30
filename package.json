@@ -1,6 +1,6 @@
 {
   "name": "modular-html",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Ultra light-weight modular based HTML",
   "main": "index.js",
   "repository": "github:roecrew/modular-html",
