@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "modular-html": "./index.js"
+    "modular-code": "./index.js"
   },
   "keywords": [
     "html",
