@@ -28,8 +28,8 @@ npm install -g modular-html
 ````html
 <body>
   <div>
-    {%a.html%}
-    {%b.html%}
+    {%hello.html%}
+    {%world.html%}
   </div>
 </body>
 ````
@@ -40,13 +40,13 @@ npm install -g modular-html
 </html>
 ````
 
-### a.html
+### hello.html
 
 ````html
 <span>Hello</span>
 ````
 
-### b.html
+### world.html
 
 ````html
 <span>World</span>
