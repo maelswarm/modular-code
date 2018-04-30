@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fs = require('fs');
 const path = process.argv[2].slice(0, process.argv[2].lastIndexOf('/'));
 
@@ -8,7 +9,7 @@ let parseFile = (filename, root) => {
     newContent += data.slice(0, data.indexOf('{%'));
     data = data.slice(data.indexOf('{%'));
     let chunk = parseFile(path + '/' + data.slice(2, data.indexOf('%}')), 0);
-    newContent += chunk.replace('\r', '');
+    newContent += chunk.replace(/(\r\n)+/g, '\r\n')
     data = data.slice(data.indexOf('%}') + 2);
   }
   newContent += data;
