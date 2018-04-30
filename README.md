@@ -4,7 +4,7 @@ Ultra light-weight modular based HTML
 ## Install
 
 ````js
-npm install modular-html
+npm install -g modular-html
 ````
 
 ### root.html
@@ -55,7 +55,7 @@ npm install modular-html
 ## Build
 
 ````js
-  nodejs modular-html ./root.html ./main.html
+modular-html ./root.html ./main.html
 ````
 
 ### Result - main.html
