@@ -10,9 +10,9 @@ npm install modular-html
 ### root.html
 
 ````html
-{{header.html}}
-{{body.html}}
-{{footer.html}}
+{%header.html%}
+{%body.html%}
+{%footer.html%}
 ````
 
 ### header.html
@@ -28,8 +28,8 @@ npm install modular-html
 ````html
 <body>
   <div>
-    {{a.html}}
-    {{b.html}}
+    {%a.html%}
+    {%b.html%}
   </div>
 </body>
 ````
