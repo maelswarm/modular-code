@@ -4,12 +4,12 @@ const path = process.argv[2].slice(0, process.argv[2].lastIndexOf('/'));
 let parseFile = (filename, root) => {
   let newContent = '';
   let data = fs.readFileSync(filename, 'utf8');
-  while(data.indexOf('{{') !== -1) {
-    newContent += data.slice(0, data.indexOf('{{'));
-    data = data.slice(data.indexOf('{{'));
-    let chunk = parseFile(path + '/' + data.slice(2, data.indexOf('}}')), 0);
+  while(data.indexOf('{%') !== -1) {
+    newContent += data.slice(0, data.indexOf('{%'));
+    data = data.slice(data.indexOf('{%'));
+    let chunk = parseFile(path + '/' + data.slice(2, data.indexOf('%}')), 0);
     newContent += chunk.replace('\r', '');
-    data = data.slice(data.indexOf('}}') + 2);
+    data = data.slice(data.indexOf('%}') + 2);
   }
   newContent += data;
   if(root) {

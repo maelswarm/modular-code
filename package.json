@@ -1,9 +1,9 @@
 {
   "name": "modular-html",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ultra light-weight modular based HTML",
   "main": "index.js",
-  "repository": "github:roecrew/modular-html"
+  "repository": "github:roecrew/modular-html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
