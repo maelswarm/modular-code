@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const fs = require('fs');
+if(process.argv[2] === undefined || process.argv[3] === undefined) {console.log('Usage\nmodular-html <root module path> <output path>'); process.exit();}
 const path = process.argv[2].slice(0, process.argv[2].lastIndexOf('/'));
 
 let parseFile = (filename, root) => {
