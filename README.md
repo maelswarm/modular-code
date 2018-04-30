@@ -55,7 +55,7 @@ npm install modular-html
 ## Build
 
 ````js
-  nodejs html-modular ./root.html ./main.html
+  nodejs modular-html ./root.html ./main.html
 ````
 
 ### Result - main.html
