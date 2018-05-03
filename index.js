@@ -3,10 +3,10 @@ const fs = require('fs');
 
 let mcodefile = fs.readFileSync('mcodefile.json', 'utf8');
 JSON.parse(mcodefile).files.forEach((file) => {
-  parseFile(file, 1);
+  parseFile(file.src, file.dest, 1);
 });
 
-let parseFile = (filename, root) => {
+let parseFile = (filename, dest, root) => {
   let newContent = '';
   let data = fs.readFileSync(filename, 'utf8');
   while(data.indexOf('{%') !== -1) {
@@ -17,9 +17,9 @@ let parseFile = (filename, root) => {
   }
   newContent += data;
   if(root) {
-    fs.writeFile(process.argv[3], newContent, (err) => {
+    fs.writeFile(dest, newContent, (err) => {
       if (err) throw err;
-      console.log(process.argv[3] + ' was constructed.');
+      console.log(dest + ' was constructed.');
     });
   } else {
     return newContent;
