@@ -1,6 +1,6 @@
 {
   "name": "modular-code",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Modularize your code",
   "main": "index.js",
   "repository": "github:roecrew/modular-code",

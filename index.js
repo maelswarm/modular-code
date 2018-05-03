@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 const fs = require('fs');
-if(process.argv[2] === undefined || process.argv[3] === undefined) {console.log('Usage\nmodular-code <root module path> <output path>'); process.exit();}
-const path = process.argv[2].slice(0, process.argv[2].lastIndexOf('/'));
+
+let mcodefile = fs.readFileSync('mcodefile.json', 'utf8');
+JSON.parse(mcodefile).files.forEach((file) => {
+  parseFile(file, 1);
+});
 
 let parseFile = (filename, root) => {
   let newContent = '';
@@ -22,4 +25,3 @@ let parseFile = (filename, root) => {
     return newContent;
   }
 }
-parseFile(process.argv[2], 1);
